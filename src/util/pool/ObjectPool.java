@@ -23,7 +23,7 @@ public class ObjectPool{
 	}
 	
 	
-	public Object getFreeObject(){
+	public synchronized Object getFreeObject(){
 		if(objects == null){
 			return null;
 		}
