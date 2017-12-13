@@ -8,7 +8,6 @@ public class Ex{
 	
 	Logger logger  = Logger.getLogger(Ex.class);
 	public Ex(){
-
 	}
 	
 	public int testTryCatch() throws Exception{
@@ -36,10 +35,15 @@ public class Ex{
 	
 	public static void main (String[] args){
 		try{
+			if(1==1){
+				throw new Exception("eee");
+
+			}
+			System.out.println("3");
 			System.out.println(new Ex().testTryCatch());
 		}catch(Exception e){
 	//		e.printStackTrace();
-			System.out.println("="+e.getCause()+" @@@ "+e.getStackTrace()[0]+"=");
+			System.out.println("="+e.getMessage()+" @@@ "+e.getStackTrace()[0]+"=");
 		}
 		
 	}
