@@ -1,4 +1,4 @@
-package main.java.util.pool;
+package util.pool;
 
 import java.util.Vector;
 

@@ -1,4 +1,4 @@
-package main.java.model.Unit;
+package model.Unit;
 
 
 public class Unit{

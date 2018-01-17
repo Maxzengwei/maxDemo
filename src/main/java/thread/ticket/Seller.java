@@ -1,5 +1,4 @@
-package main.java.thread.ticket;
-
+package thread.ticket;
 
 
 public class Seller implements Runnable{
