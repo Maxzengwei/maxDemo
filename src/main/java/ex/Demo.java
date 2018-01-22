@@ -8,9 +8,9 @@ public class Demo {
 	
 	public int b;
 	
-	public static HashMap map1 = new HashMap();
+	public static HashMap<?, ?> map1;
 
-	public  HashMap map2 = new HashMap();
+	public  HashMap<?, ?> map2;
 
 	public static void doA(){
 		int c = 0;
@@ -64,12 +64,32 @@ public class Demo {
 		
 	}
     
-    public static void main(String args[]){
-    	doA();
-    	new Demo().doB();
-    }
+//    public static void main(String args[]){
+//    	doA();
+//    	new Demo().doB();
+//    }
 
     
+    final String str1 = "Hello";//定义实例变量时指定初始值
     
+    final String str2;//非静态初始化块中对实例变量进行初始化
+    final String str3;//构造器中对实例变量进行初始化
+ //   final String str4;
+    
+    {
+        str2 = "Hello";
+    }
+    public Demo() {
+        str3 = "Hello";
+    }
+    
+    public void show(){
+        System.out.println(str1 + str1 == "HelloHello");//true
+        System.out.println( "HelloHello".equals(str2 + str2));//false
+        System.out.println(str3 + str3 == "HelloHello");//false
+    }
+    public static void main(String[] args) {
+        new Demo().show();
+    }
     
 }
