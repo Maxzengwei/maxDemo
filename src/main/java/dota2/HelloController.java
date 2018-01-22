@@ -2,6 +2,8 @@ package dota2;
 
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.*;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -16,26 +18,20 @@ public class HelloController {
     public String index() {
         return "Hello Dota2 player!";
     }
+    
+    public static void main(String args[]) {
+    	List<Integer> li = Arrays.asList(1,2,3,4,5);
+    	li.forEach(a->System.out.println(Math.pow(a,2)));
+    	
+    	Converter<String, Integer> converter = (from) -> Integer.valueOf(from);  
+        Integer converted = converter.convert("123");  
+        System.out.println(converted);    // 123 
+    }
 
     
-    public static void main(String args[]){
-    	List<String> names = Arrays.asList("e","c","b","d");
-    	
-//    	Collections.sort(names, new Comparator<String>(){
-//    			@Override
-//    			public int compare(String a,String b){
-//    				return a.compareTo(b);
-//    			}
-//    		}
-//    	);
-    	
-    	Collections.sort(names,(a,b)-> a.compareTo(b));
-    	
-    	for(String s:names){
-    		System.out.println(s);
-    	}
-    }
-    
-    
-    
+     
 }
+
+interface Converter<F, T> {  
+    T convert(F d);  
+}  

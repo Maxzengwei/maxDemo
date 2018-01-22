@@ -4,7 +4,6 @@ package model.Unit;
 public class Unit{
 	private long UnitID;
 	private String UnitName;
-	private int level;
 	private String UnitDesc;
 	private int hp;
 	private int mp;
@@ -37,12 +36,6 @@ public class Unit{
 	}
 	public void setUnitName(String UnitName) {
 		this.UnitName = UnitName;
-	}
-	public int getLevel() {
-		return level;
-	}
-	public void setLevel(int level) {
-		this.level = level;
 	}
 	public String getUnitDesc() {
 		return UnitDesc;

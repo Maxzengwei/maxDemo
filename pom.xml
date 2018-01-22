@@ -3,7 +3,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <version>0.0.2</version>
+    <groupId>org.springframework</groupId>
+    <artifactId>gs-spring-boot</artifactId>
+    <version>0.1.0</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -15,11 +17,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-       	<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -37,6 +34,4 @@
         </plugins>
     </build>
 
-    <groupId>max</groupId>
-    <artifactId>dota2-demo</artifactId>
 </project>

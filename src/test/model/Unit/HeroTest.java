@@ -13,10 +13,15 @@ public class HeroTest{
 	
 	@Test
 	public void testAttackUnit() {
+		
+		
 
 		Unit axe = new Hero("axe");
 		axe.setHp(100);
 		axe.setAttack(4);
+		axe.setLevel(1);
+		
+		System.out.prinltn(axe.getLevel());
 		
 		Unit puck = new Hero("puck");
 		puck.setHp(20);
