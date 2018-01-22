@@ -84,19 +84,19 @@ public class ObjectPool{
 		}
 	}
 	
-	public static void main(String[] args){
-        ObjectPool objPool = new ObjectPool();  
-        objPool.createObjectPool(); 
-        objPool.printString();
-        Object obj = objPool.getFreeObject();   
-        objPool.printString();
-  //      objPool.releaseObject(obj);  
-        Object obj2 = objPool.getFreeObject(); 
-        objPool.printString();
-        Object obj3 = objPool.getFreeObject(); 
-        objPool.printString();
-
-       // objPool.closeObjectPool(); 
-	}
+//	public static void main(String[] args){
+//        ObjectPool objPool = new ObjectPool();  
+//        objPool.createObjectPool(); 
+//        objPool.printString();
+//        Object obj = objPool.getFreeObject();   
+//        objPool.printString();
+//  //      objPool.releaseObject(obj);  
+//        Object obj2 = objPool.getFreeObject(); 
+//        objPool.printString();
+//        Object obj3 = objPool.getFreeObject(); 
+//        objPool.printString();
+//
+//       // objPool.closeObjectPool(); 
+//	}
 }
 
